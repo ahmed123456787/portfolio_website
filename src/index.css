@@ -1,8 +1,13 @@
 @import "tailwindcss";
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"); */
+body {
+  font-family: "Roboto", sans-serif;
+}
 
 :root {
   --bgcolor: #121212;
   --redcolor: #e34844;
-  --textcolor: #cad5e2;
+  --textcolor: #ffffff;
   --bgimage: #181818;
+  /* --bgimage: rgba(255, 255, 255, 0.1); */
 }

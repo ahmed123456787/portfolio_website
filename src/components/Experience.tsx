@@ -25,21 +25,23 @@ const experiences = [
 const Experience = () => {
   return (
     <div className="flex flex-col items-center mt-12 px-4 sm:px-8 md:px-12">
-      <h2 className="text-white text-2xl font-bold mb-6">Experience</h2>
+      <h2 className="text-[var(--textcolor)] text-2xl font-bold mb-6">
+        Experience
+      </h2>
       <div className="flex flex-col gap-6 w-full max-w-4xl">
         {experiences.map((experience, index) => (
           <div
             key={index}
             className="bg-[var(--bgimage)] bg-opacity-80 p-6 rounded-lg shadow-md"
           >
-            <h3 className="text-red-400 text-xl font-semibold">
+            <h3 className="text-[var(--redcolor)] text-xl font-semibold">
               {experience.title}
             </h3>
-            <p className="text-white text-md font-medium">
+            <p className="text-[var(--textcolor)] text-md font-medium">
               {experience.company}
             </p>
             <p className="text-slate-400 text-sm">{experience.duration}</p>
-            <p className="text-white mt-4 leading-relaxed">
+            <p className="text-[var(--textcolor)] mt-4 leading-relaxed">
               {experience.description}
             </p>
           </div>

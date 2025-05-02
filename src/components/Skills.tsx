@@ -19,16 +19,18 @@ const icons = [
 const Skills = () => {
   return (
     <div className="flex flex-col items-center px-4 sm:px-8 md:px-12">
-      <h2 className="text-white text-2xl font-bold mb-6">Skills</h2>
-      <div className="grid grid-cols-3  md:grid-cols-4 lg:grid-cols-8 gap-6">
+      <h2 className="text-[var(--textcolor)] text-2xl font-bold mb-6">
+        Skills
+      </h2>
+      <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-6">
         {icons.map((icon, index) => (
           <div key={index} className="flex flex-col items-center">
             <img
               src={icon.src}
               alt={icon.alt}
-              className="w-12 h-12 sm:w-16 sm:h-16 m-2 rounded-lg shadow-md hover:scale-110 transition-transform duration-300"
+              className="w-12 h-12 sm:w-16 sm:h-16 m-2 rounded-lg shadow-md hover:scale-110 transition-transform duration-300 hover:cursor-pointer"
             />
-            <p className="text-white text-sm sm:text-md mt-2 text-center">
+            <p className="text-[var(--textcolor)] text-sm sm:text-md mt-2 text-center">
               {icon.alt}
             </p>
           </div>
