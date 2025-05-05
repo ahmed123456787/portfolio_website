@@ -10,7 +10,7 @@ const Contact = () => {
         </p>
         <div className="flex space-x-1 mb-8 items-center">
           <a
-            href="https://github.com"
+            href="https://github.com/ahmed123456787"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -22,7 +22,7 @@ const Contact = () => {
             />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/zaterahmed/"
             target="_blank"
             rel="noopener noreferrer"
           >
