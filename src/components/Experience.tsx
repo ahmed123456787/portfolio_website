@@ -4,7 +4,7 @@ const experiences = [
     company: "Bastyon",
     duration: "December 2024 - March 2025",
     description:
-      "Worked on AI-driven solutions and cloud infrastructure, contributing to the development of scalable and efficient systems. Gained hands-on experience with cloud platforms and machine learning tools.",
+      "Optimized ETL pipelines using Airbyte to ensure real-time data delivery, improving data accuracy by 30%. Created performance dashboards to monitor system metrics and user engagement. Deployed data-driven applications via CI/CD pipelines on OVH Cloud, reducing deployment time by 25%.",
   },
   {
     title: "Software Developer Intern",
@@ -18,7 +18,7 @@ const experiences = [
     company: "Freelance",
     duration: "2025 - Present",
     description:
-      "Designed and developed mobile applications for clients using React Native. Focused on creating user-friendly interfaces and ensuring optimal performance.",
+      "Designed and developed web applications for clients using React and django. Focused on creating user-friendly interfaces and ensuring optimal performance.",
   },
 ];
 

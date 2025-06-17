@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FaCode } from "react-icons/fa6";
 import { PiEye } from "react-icons/pi";
+import { code } from "framer-motion/client";
 
 const projects = [
   {
@@ -10,8 +11,8 @@ const projects = [
     description:
       "full supply chain management system that is built for suppplier,driver and customer integrated with ai\
       agent support to answer users question about the profitablity ",
-    image: "about-me.png",
-    category: "web",
+    image: "supply_chain_project.png",
+    category: "ai",
     codeLink: "https://github.com/ahmed123456787/hakathon_supply_chain",
   },
   {
@@ -19,16 +20,18 @@ const projects = [
     name: "Text Editor",
     description:
       "online text editor with real time collaboration and sharing feature",
-    image: "about-me.png",
+    image: "text_editor_project.png",
     category: "web",
     codeLink: "https://github.com/ahmed123456787/Text-Editor",
   },
   {
     id: 3,
-    name: "Project 1",
-    description: "Description of project 1",
-    image: "about-me.png",
-    category: "ai",
+    name: "Sadaka Backend",
+    description:
+      "This is backend for helping mosqsue stuff to manage thier ressource and for efficent donation and reach out the needed people",
+    image: "sadaka_project.png",
+    category: "web",
+    codeLink: "https://github.com/ahmed123456787/kayrat_sadaka",
   },
 ];
 
@@ -86,7 +89,7 @@ const Projects: React.FC = () => {
               <img
                 src={project.image}
                 alt={project.name}
-                className="mb-1 rounded-xl group-hover:opacity-75 transition-opacity duration-300"
+                className="mb-1 rounded-xl group-hover:opacity-75 transition-opacity duration-300 bg-contain"
               />
               <div className="absolute inset-0 flex items-center justify-center gap-4 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <a

@@ -12,9 +12,9 @@ const About = () => {
         </h2>
         <p className="text-[var(--textcolor)] leading-relaxed">
           I am a dedicated Software Engineering student with a passion for
-          full-stack and mobile development. My technical skill set includes
-          expertise in MongoDB, Express.js, React, Node.js, React Native,
-          Firebase, MySQL, Java Swing, Python, and Next.js.
+          full-stack and Ai. My technical skill set includes expertise in
+          Django, Express.js, React, Node.js, MySQL, Java, Python, Keras,
+          Langchain and more.
         </p>
         <p className="text-[var(--textcolor)] leading-relaxed mt-4">
           I thrive on bringing projects to life through code, utilizing Git and

@@ -26,6 +26,13 @@ const Hero = () => {
     };
   }, []);
 
+  const handleDownloadCV = () => {
+    const link = document.createElement("a");
+    link.href = "/cv.pdf"; // File should be in public folder
+    link.download = "cv.pdf";
+    link.click();
+  };
+
   return (
     <div className="flex flex-col items-center justify-center w-full h-full px-4 sm:px-8 md:px-12">
       <div className="flex flex-col md:flex-row justify-between w-full items-center">
@@ -39,16 +46,19 @@ const Hero = () => {
           </div>
 
           <p className="pt-6 text-xl text-slate-400 leading-relaxed">
-            Software engineering student here, loving full-stack and mobile
-            development! I'm all about learning new tech and building cool apps
-            with others.
+            Software engineering student here, loving full-stack and building
+            machine learning models! I'm all about learning new tech and
+            building cool apps with others.
           </p>
 
           <div className="flex gap-4 pt-6 justify-center md:justify-start">
             <button className="text-[var(--textcolor)] bg-[var(--redcolor)] px-8 py-3 rounded-4xl hover:bg-red-600 transition duration-300">
               Hire me
             </button>
-            <button className="text-[var(--textcolor)] px-8 py-3 rounded-4xl border-[var(--redcolor)] border-4 hover:bg-[var(--redcolor)] transition duration-300">
+            <button
+              onClick={handleDownloadCV}
+              className="text-[var(--textcolor)] px-8 py-3 rounded-4xl border-[var(--redcolor)] border-4 hover:bg-[var(--redcolor)] transition duration-300"
+            >
               Download CV
             </button>
           </div>
@@ -81,4 +91,3 @@ const Hero = () => {
 };
 
 export default Hero;
-// export default Hero;
