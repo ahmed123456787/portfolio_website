@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FaCode } from "react-icons/fa6";
 import { PiEye } from "react-icons/pi";
-import { code } from "framer-motion/client";
 
 const projects = [
   {
