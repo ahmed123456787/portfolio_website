@@ -1,5 +1,13 @@
 const experiences = [
   {
+    title: "Agentic  Ai Intern",
+    company: "Maystro Delivery",
+    duration: " June 2025 - present",
+    description:
+      "Develop an ai agent to help in stock management (details will be added later)",
+    logo: "/maystro.png",
+  },
+  {
     title: "AI and Data Intern",
     company: "Bastyon",
     duration: "December 2024 - March 2025",
@@ -10,6 +18,7 @@ const experiences = [
     title: "Software Developer Intern",
     company: "Mooc lab",
     duration: "June 2024 - August 2024",
+    logo: "/logo-mooc.png",
     description:
       "Developed a websocket server using Node.js and express.js for real time communication with admin server to stream data of bus location and status. Worked on a project to create a web application for bus tracking using React.js and Firebase.",
   },
@@ -37,9 +46,18 @@ const Experience = () => {
             <h3 className="text-[var(--redcolor)] text-xl font-semibold">
               {experience.title}
             </h3>
-            <p className="text-[var(--textcolor)] text-md font-medium">
-              {experience.company}
-            </p>
+            <div className="flex items-center gap-2">
+              <p className="text-[var(--textcolor)] text-md font-medium">
+                {experience.company}
+              </p>
+              {experience.logo && (
+                <img
+                  src={experience.logo}
+                  alt={`${experience.company} logo`}
+                  className="w-16 h-8 mt-2 mb-4 rounded-full"
+                />
+              )}
+            </div>
             <p className="text-slate-400 text-sm">{experience.duration}</p>
             <p className="text-[var(--textcolor)] mt-4 leading-relaxed">
               {experience.description}
