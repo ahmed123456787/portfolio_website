@@ -400,7 +400,7 @@ export default function Page() {
                           )}
                       </CardContent>
                       <CardFooter className="mt-auto">
-                        {project.link ? (
+                        {project.link && (
                           <div className="flex flex-row w-full space-x-2">
                             <Button
                               asChild
@@ -432,10 +432,6 @@ export default function Page() {
                               </Button>
                             )}
                           </div>
-                        ) : (
-                          <span className="text-muted-foreground inline-flex items-center space-x-1">
-                            {project.status} →
-                          </span>
                         )}
                       </CardFooter>
                     </Card>
