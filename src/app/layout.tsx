@@ -1,34 +1,35 @@
-import type { Metadata } from "next"
-import { Inter } from "next/font/google"
-import "./globals.css"
-import { ThemeProvider } from "@/components/theme-provider"
-import { Footer } from "@/components/footer"
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import { ThemeProvider } from "@/components/theme-provider";
+import { Footer } from "@/components/footer";
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ["latin"],
-  display: 'swap'
-})
+  display: "swap",
+});
 
 export const metadata: Metadata = {
-  title: "Amoda Fernando - Portfolio",
-  description: "Personal portfolio showcasing my work and experience in software development",
+  title: "zater ahmed - Portfolio",
+  description:
+    "Personal portfolio showcasing my work and experience in software development",
   icons: {
     icon: [
       {
-        url: '/favicon.png',
-        type: 'image/png',
-        sizes: '32x32'
-      }
+        url: "/favicon.png",
+        type: "image/png",
+        sizes: "32x32",
+      },
     ],
-    shortcut: '/favicon.png',
-    apple: '/favicon.png',
-  }
-}
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
@@ -46,5 +47,5 @@ export default function RootLayout({
         </ThemeProvider>
       </body>
     </html>
-  )
-} 
+  );
+}
